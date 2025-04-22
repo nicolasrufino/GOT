@@ -1,4 +1,11 @@
-/* Make video cover the screen */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+}
+
+
 video {
     position: fixed;
     top: 0;
@@ -43,5 +50,55 @@ video {
   @font-face {
     font-family: 'got_font';
     src: url("../assets/fonts/got_font.ttf") format("truetype");
+  }
+  
+  
+  body.lock-scroll {
+    overflow: hidden;
+  }
+  
+  /* Fullscreen video overlay initially */
+  #videoOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s ease-in-out;
+  }
+  
+  /* When video ends, becomes part of the scrollable page */
+  #videoOverlay.unlocked {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  /* Intro video styling */
+  #firstVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  
+  /* THE WALL text */
+  #revealTitle {
+    z-index: 2;
+    color: rgb(148, 255, 243);
+    font-size: 3rem;
+    font-family: "got_font", serif;
+    opacity: 0;
+    transition: opacity 2s ease;
   }
   

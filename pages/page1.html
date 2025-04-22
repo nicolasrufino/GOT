@@ -2,20 +2,33 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GOT - The Wall</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Wall</title>
+  <link rel="stylesheet" href="../css/styles.css" />
 </head>
 
-<body>
+<body class="lock-scroll">
 
-    <video id="FirstVideo" preload="auto">
-        <source src="./assets/video/firstPage1_cut.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+  <!-- Video + Title that stays at top -->
+  <div id="videoOverlay">
+    <video id="firstVideo" autoplay>
+      <source src="../assets/video/firstPage1_cut.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
     </video>
+    <h1 id="revealTitle">THE WALL</h1>
+  </div>
 
-    <script src="js/main.js"></script>
+  <!-- Scrollable page content -->
+  <main id="pageContent">
+    <section style="padding: 10vh 2rem; background: #000000; color: white;">
+
+      <h2>Beyond the Wall</h2>
+      <p>Here lies the world of myth and darkness.</p>
+    </section>
+  </main>
+
+  <script src="../js/first.js"></script>
 </body>
 
 </html>

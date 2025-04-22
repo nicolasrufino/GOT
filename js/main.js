@@ -13,3 +13,4 @@ button.addEventListener("click", () => {
         window.location.href = "pages/page1.html";
     });
 });
+
