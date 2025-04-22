@@ -20,14 +20,14 @@ video {
     justify-content: center;
     align-items: center;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.7); /* Optional for mood */
+    background-color: rgba(0, 0, 0, 0); /* Optional for mood */
   }
   
   #startBtn {
     font-family: "got_font", serif;
     font-size: 2rem; /* Bigger size */
     padding: 1.2rem 3rem;
-    color: rgb(255, 42, 4);
+    color: rgb(214, 54, 10);
    /* color: rgb(181, 137, 42);*/
     background: none;
     border: none;
